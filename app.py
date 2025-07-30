@@ -10,7 +10,7 @@ model = joblib.load("spam_detection_model.pkl")
 vectorizer = joblib.load("tfidf_vectorizer.pkl")
 
 # Load your dataset (assumed to be available)
-data = pd.read_csv(r"C:\Users\zamir\zamir\data analysis\SMS_Spam\spam.csv", encoding='latin-1')[['v1', 'v2']]
+data = pd.read_csv("spam.csv", encoding='latin-1')[['v1', 'v2']]
 data.columns = ['label', 'message']
 
 # Map labels to binary
