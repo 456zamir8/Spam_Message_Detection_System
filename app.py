@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 import joblib
 
 # Load model and vectorizer
-model = joblib.load(r"C:\Users\zamir\zamir\data analysis\SMS_Spam\spam_detection_model.pkl")
-vectorizer = joblib.load(r"C:\Users\zamir\zamir\data analysis\SMS_Spam\tfidf_vectorizer.pkl")
+model = joblib.load("spam_detection_model.pkl")
+vectorizer = joblib.load("tfidf_vectorizer.pkl")
 
 # Load your dataset (assumed to be available)
 data = pd.read_csv(r"C:\Users\zamir\zamir\data analysis\SMS_Spam\spam.csv", encoding='latin-1')[['v1', 'v2']]
